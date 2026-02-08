@@ -1,0 +1,92 @@
+body{
+      margin: 0%;
+    background-color: #f4f4f4;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+header{
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+    align-items: center;
+    background-color: #5fbfef;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
+}
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+ul li{
+    list-style: none;
+    background-color: #eaeaea;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color:#5fbfef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #357abd;
+}
+#message{
+    font-weight:bold ;
+    color: green;
+}
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+}
+/* Téléphone */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+     img {
+        width: 90px;
+        height: 90px;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
+/* Tablette */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    section {
+        margin: 15px;
+    }
+}
+
+/* Grand écran */
+@media (min-width: 1025px) {
+    body {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+
